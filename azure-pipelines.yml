@@ -8,10 +8,8 @@ trigger:
 - master
 
 pool:
-  vmImage: windows-latest
+  vmImage: ubuntu-latest
 
-strategy:                 
-      maxParallel: 0
 steps:
 - task: Maven@3
   inputs:
