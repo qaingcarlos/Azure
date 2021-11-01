@@ -11,7 +11,7 @@ pool:
   vmImage: windows-latest
 
 strategy:                 
-      maxParallel: 5
+      maxParallel: 0
 steps:
 - task: Maven@3
   inputs:
