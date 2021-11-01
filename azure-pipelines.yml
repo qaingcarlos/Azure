@@ -3,12 +3,15 @@
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
 
+
 trigger:
 - master
 
 pool:
   vmImage: windows-latest
 
+strategy:                 
+      maxParallel: 5
 steps:
 - task: Maven@3
   inputs:
